@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="597.0" prefWidth="1283.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proj.sample.Controller">
+   <items>
+      <ImageView fx:id="currentFrame" fitHeight="597.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../1071x597.png" />
+         </image></ImageView>
+      <VBox fx:id="about" alignment="CENTER" prefHeight="636.0" prefWidth="47.0">
+         <children>
+            <Button fx:id="startButton" alignment="CENTER" mnemonicParsing="false" onAction="#startClicked" prefHeight="26.0" prefWidth="174.0" text="Start">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin></Button>
+            <Button fx:id="chargeeButton" mnemonicParsing="false" onAction="#chargerClicked" prefHeight="26.0" prefWidth="172.0" text="Charger">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin></Button>
+            <Label fx:id="filePath" text="">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <Button layoutX="339.0" layoutY="489.0" mnemonicParsing="false" onAction="#destinationClicked" prefHeight="26.0" prefWidth="173.0" text="Destination">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin></Button>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="395.0" prefHeight="36.0" prefWidth="216.0">
+               <children>
+                  <Label prefHeight="33.0" prefWidth="78.0" text="Compteur: " />
+                  <Label fx:id="compteurVoitureDepass" alignment="CENTER" prefHeight="21.0" prefWidth="82.0" text="0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="152.0" prefHeight="36.0" prefWidth="216.0">
+               <children>
+                  <Label prefHeight="16.0" prefWidth="150.0" text="Vitesse Max(km/h):">
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="vitesseMaxField" alignment="CENTER" prefHeight="26.0" prefWidth="84.0" promptText="90 ">
+                     <HBox.margin>
+                        <Insets left="30.0" right="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#aboutClicked" prefHeight="26.0" prefWidth="128.0" text="About">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin></Button>
+         </children>
+      </VBox>
+   </items>
+</SplitPane>

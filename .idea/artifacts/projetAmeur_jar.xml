@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="projetAmeur:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/projetAmeur_jar</output-path>
+    <root id="archive" name="projetAmeur.jar">
+      <element id="module-output" name="projetAmeur" />
+      <element id="extracted-dir" path="$USER_HOME$/opencv-3.0.0/release/bin/opencv-300.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
